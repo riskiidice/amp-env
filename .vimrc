@@ -9,9 +9,13 @@ let b:ale_fixers = ['eslint']
 let b:ale_fix_on_save = 1
 
 
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+map <C-o> :NERDTreeToggle<CR>
+
 let g:lightline = { 'colorscheme': 'wombat','active': { 'left': [['mode', 'paste' ],['readonly', 'filename', 'modified']],'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']] } }
 map ; :Files<CR>
-map <C-o> :NERDTreeToggle<CR>
+
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -69,8 +73,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
 
 " INSTALLED PACKAGES
 " =========================================
