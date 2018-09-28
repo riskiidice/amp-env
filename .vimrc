@@ -11,6 +11,8 @@ let b:ale_fix_on_save = 1
 
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeShowHidden=1
+
 map <C-o> :NERDTreeToggle<CR>
 
 let g:lightline = { 'colorscheme': 'wombat','active': { 'left': [['mode', 'paste' ],['readonly', 'filename', 'modified']],'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']] } }
