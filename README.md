@@ -1,2 +1,2 @@
-#My vim config for Python and Django
+# My vim config for Python and Django
 ====================================
