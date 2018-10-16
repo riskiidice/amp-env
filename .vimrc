@@ -1,7 +1,7 @@
 set nocompatible " be iMproved
 filetype off                   " required!
 filetype plugin indent on      " required! 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 set runtimepath^=~/.vim/bundle/django-plus.vim/
 
 let b:ale_linters = ['pyflakes', 'flake8', 'pylint']
